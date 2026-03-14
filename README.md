@@ -11,8 +11,9 @@ The subfolder _/simulation_ contains the R-script with our functions and their p
 This VAST of the mechanism shows parts of the social impact theory, an extension with CON and INC, which can be described in terms of this theory, and, with ID and SA, an assumption of the elimination of social loafing (Harkins & Jackson, 1985; Karau & Williams, 1993; Latané et al., 1979):\
 ![VAST Mechanism](doc/Social_Loafing_Mechanism.png)
 
-The phenomenon of social loafing:\
+The phenomenon of social loafing:
 > People exhibit a sizable decrease in individual effort when performing in groups as compared to when they perform alone (Latané et al., 1979)
+
 ![VAST Phenomenon](doc/Social_Loafing_Phenomenon.png)
 MC is primarily for operationalization purposes, and ID and SA were hypothesized to eliminate social loafing (Harkins & Jackson, 1985).
 
