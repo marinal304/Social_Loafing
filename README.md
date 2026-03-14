@@ -3,13 +3,13 @@ This repository was created as part of a course at the Ludwig-Maximilians-Univer
 The goal was to formalize a self-selected theory, whereby we chose Latané’s (1973, as cited in Latané et al., 1979) social impact theory with some extensions.
 
 To guide you through the repository:\
-The subfolder ./doc contains our VAST-displays (as drawio- and PNG-files) for the mechanism (without and with some jingle-jangle fallacies) and the phenomenon of social loafing.\
-The subfolder ./simulation contains the R-script with our functions and their plots as well as a simulation. In a separate subfolder are the plots as PNG-files.
+The subfolder _/doc_ contains our VAST-displays (as drawio- and PNG-files) for the mechanism (without and with some jingle-jangle fallacies) and the phenomenon of social loafing.\
+The subfolder _/simulation_ contains the R-script with our functions and their plots as well as a simulation. In a separate subfolder are the plots as PNG-files.
 
 
 ## VAST-displays
 This VAST of the mechanism shows parts of the social impact theory, an extension with CON and INC, which can be described in terms of this theory, and, with ID and SA, an assumption of the elimination of social loafing (Harkins & Jackson, 1985; Karau & Williams, 1993; Latané et al., 1979):
-/assets/images/Social_Loafing_Mechanism.png
+![VAST Mechanism](doc/Social_Loafing_Mechanism.png)
 
 
 ## Google Docs
