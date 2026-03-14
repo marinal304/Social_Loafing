@@ -3,11 +3,11 @@ This repository was created as part of a course at the Ludwig-Maximilians-Univer
 The goal was to formalize a self-selected theory, whereby we chose Latané’s (1973, as cited in Latané et al., 1979) social impact theory with some extensions.
 
 To guide you through the repository:\
-The subfolder _/doc_ contains our VAST-displays (as drawio- and PNG-files) for the mechanism (without and with some jingle-jangle fallacies) and the phenomenon of social loafing.\
-The subfolder _/simulation_ contains the R-script with our functions and their plots as well as a simulation. In a separate subfolder are the plots as PNG-files.
+The subfolder _/doc_ contains our VAST displays (as drawio and PNG files) for the mechanism (without and with some jingle-jangle fallacies) and the phenomenon of social loafing.\
+The subfolder _/simulation_ contains the R-script with our functions and their plots as well as a simulation. In a separate subfolder are the plots as PNG files.
 
 
-## VAST-displays
+## VAST displays
 ### The mechanism
 This VAST of the mechanism shows parts of the social impact theory, an extension with CON and INC, which can be described in terms of this theory, and, with ID and SA, an assumption of the elimination of social loafing (Harkins & Jackson, 1985; Karau & Williams, 1993; Latané et al., 1979):\
 ![VAST Mechanism](doc/Social_Loafing_Mechanism.png)
@@ -21,8 +21,12 @@ The phenomenon of social loafing:
 ## Superfunction
 This superfunction for individual output (IO) with all measured/manipulated variables does not include random noise.
 ![Superfunction without noise](simulation/plots/superfunction_without_noise.png)
-For the abbreviations see the VAST-displays above. \
+For the abbreviations, see the VAST-displays above. \
 IO drops with increasing CT and grows with increasing S, whereby the nth CT and/or S has less effect than the (1-n)th one. If ID and SA are given, CON is always 1, and therefore IO is higher via INC and IE. If ID and/or SA are not given, IO is usually lower.
+
+## Simulation
+For the simulation, we wanted to replicate Latané et al. (1979).\
+It should be noted that the identifiability of the individual output (ID) and a standard for comparison (SA) are not part of Latané et al.'s (1979) experiment but an extension based on Latané et al.'s (1979) suggestion and Harkins & Jackson (1985).
 
 ## Google Docs
 The link for the Google Docs with my Construct Table, Variable Table, and Relationship Table:\
