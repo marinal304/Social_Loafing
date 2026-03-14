@@ -12,10 +12,9 @@ This VAST of the mechanism shows parts of the social impact theory, an extension
 ![VAST Mechanism](doc/Social_Loafing_Mechanism.png)
 
 The phenomenon of social loafing:
-> People exhibit a sizable decrease in individual effort when performing in groups as compared to when they perform alone (Latané et al., 1979)
+> [...] people exhibit a sizable decrease in individual effort when performing in groups as compared to when they perform alone [...] (Latané et al., 1979, p. 822)
 
 ![VAST Phenomenon](doc/Social_Loafing_Phenomenon.png)
-MC is primarily for operationalization purposes, and ID and SA were hypothesized to eliminate social loafing (Harkins & Jackson, 1985).
 
 ## Google Docs
 The link for the Google Docs with my Construct Table, Variable Table, and Relationship Table:\
