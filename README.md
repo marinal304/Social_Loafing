@@ -20,7 +20,7 @@ The phenomenon of social loafing:
 
 ## Superfunction
 This superfunction for individual output (IO) with all measured/manipulated variables does not include random noise.
-![Superfunction without noise](simulation/plots/superfunction without noise.png)
+![Superfunction without noise](simulation/plots/superfunction_without_noise.png)
 For the abbreviations see the VAST-displays above. \
 IO drops with increasing CT and grows with increasing S, whereby the nth CT and/or S has less effect than the (1-n)th one. If ID and SA are given, CON is always 1, and therefore IO is higher via INC and IE. If ID and/or SA are not given, IO is usually lower.
 
