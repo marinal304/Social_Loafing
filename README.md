@@ -25,7 +25,7 @@ For the abbreviations, see the VAST-displays above. \
 IO drops with increasing CT and grows with increasing S, whereby the nth CT and/or S has less effect than the (1-n)th one. If ID and SA are given, CON is always 1, and therefore IO is higher via INC and IE. If ID and/or SA are not given, IO is usually lower.
 
 ## Simulation
-For the simulation, we wanted to replicate Latané et al. (1979).\
+For the simulation, which was mentioned above, we wanted to replicate Latané et al. (1979).\
 It should be noted that the identifiability of the individual output (ID) and a standard for comparison (SA) are not part of Latané et al.'s (1979) experiment but an extension based on Latané et al.'s (1979) suggestion and Harkins & Jackson (1985).
 
 ## Google Docs
