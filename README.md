@@ -1,2 +1,25 @@
 # Social_Loafing
 This repository was created as part of a course at the Ludwig-Maximilians-Universität München.
+The goal was to formalize a self-selected theory, whereby we chose Latané’s (1973, as cited in Latané et al., 1979) social impact theory with some extensions.
+
+To guide you through the repository:
+The subfolder /doc contains our VAST-displays (as drawio- and PNG-files) for the mechanism (without and with some jingle-jangle fallacies) and the phenomenon of social loafing.
+The subfolder /simulation contains the R-script with our functions and their plots as well as a simulation. In a separate subfolder are the plots as PNG-files.
+
+
+##VAST-displays
+This VAST of the mechanism shows parts of the social impact theory, an extension with CON and INC, which can be described in terms of this theory, and, with ID and SA, an assumption of the elimination of social loafing (Harkins & Jackson, 1985; Karau & Williams, 1993; Latané et al., 1979):
+
+
+
+##Google Docs
+The link for the Google Docs with my Construct Table, Variable Table, and Relationship Table:
+https://docs.google.com/document/d/1uZwXfztk2ZApD-X8wkGsBsPKZ0mZOGYQWTcuy2yt2g8/edit?pli=1&tab=t.0
+
+##The main paper for this formalization
+Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: The causes and consequences of social loafing. Journal of Personality and Social Psychology, 37(6), 822–832. https://doi.org/10.1037/0022-3514.37.6.822
+
+##Other References
+Harkins, S. G., & Jackson, J. M. (1985). The Role of Evaluation in Eliminating Social Loafing. Personality and Social Psychology Bulletin, 11(4), 457–465. https://doi.org/10.1177/0146167285114011
+Karau, S. J., & Williams, K. D. (1993). Social loafing: A meta-analytic review and theoretical integration. Journal of Personality and Social Psychology, 65(4), 681–706. https://doi.org/10.1037/0022-3514.65.4.681
+Latané, B. (1981). The psychology of social impact. American Psychologist, 36(4), 343–356. https://doi.org/10.1037/0003-066X.36.4.343
