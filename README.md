@@ -8,18 +8,21 @@ The subfolder _/simulation_ contains the R-script with our functions and their p
 
 
 ## VAST-displays
-#### The mechanism
+### The mechanism
 This VAST of the mechanism shows parts of the social impact theory, an extension with CON and INC, which can be described in terms of this theory, and, with ID and SA, an assumption of the elimination of social loafing (Harkins & Jackson, 1985; Karau & Williams, 1993; Latané et al., 1979):\
 ![VAST Mechanism](doc/Social_Loafing_Mechanism.png)
 
-#### The phenomenon
+### The phenomenon
 The phenomenon of social loafing:
 > [...] people exhibit a sizable decrease in individual effort when performing in groups as compared to when they perform alone [...] (Latané et al., 1979, p. 822)
 
 ![VAST Phenomenon](doc/Social_Loafing_Phenomenon.png)
 
-## Superfunction and Simulation
-
+## Superfunction
+This superfunction for individual output (IO) with all measured/manipulated variables does not include random noise.
+![VAST Phenomenon](simulation/plots/superfunction without noise.png)
+For the abbreviations see the VAST-displays above. \
+IO drops with increasing CT and grows with increasing S, whereby the nth CT and/or S has less effect than the (1-n)th one. If ID and SA are given, CON is always 1, and therefore IO is higher via INC and IE. If ID and/or SA are not given, IO is usually lower.
 
 ## Google Docs
 The link for the Google Docs with my Construct Table, Variable Table, and Relationship Table:\
