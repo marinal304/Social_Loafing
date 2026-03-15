@@ -30,8 +30,8 @@ For the simulation, which was mentioned above, we wanted to replicate Latané et
 It should be noted that the identifiability of the individual output (ID) and a standard for comparison (SA) are not part of Latané et al.'s (1979) experiment but an extension based on Latané et al.'s (1979) suggestion and Harkins & Jackson (1985).
 
 ## Google Docs
-The link for the Google Docs with my Construct Table, Variable Table, and Relationship Table:\
-[Google Docs](https://docs.google.com/document/d/1uZwXfztk2ZApD-X8wkGsBsPKZ0mZOGYQWTcuy2yt2g8/edit?pli=1&tab=t.0)
+The [Google Docs](https://docs.google.com/document/d/1uZwXfztk2ZApD-X8wkGsBsPKZ0mZOGYQWTcuy2yt2g8/edit?pli=1&tab=t.0) with my Construct Table, Variable Table, and Relationship Table\
+The tables can also be found in the final report. It should be noted, though, that the Relationship Table is presented in running text in this report.
 
 ## The main paper for this formalization
 Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: The causes and consequences of social loafing. Journal of Personality and Social Psychology, 37(6), 822–832. https://doi.org/10.1037/0022-3514.37.6.822
