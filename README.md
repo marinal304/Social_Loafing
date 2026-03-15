@@ -3,9 +3,9 @@ This repository was created as part of a course at the Ludwig-Maximilians-Univer
 The goal was to formalize a self-selected theory, whereby we chose Latané’s (1973, as cited in Latané et al., 1979) social impact theory with some extensions.
 
 To guide you through the repository:\
-The subfolder _/doc_ contains our VAST displays (as drawio and PNG files) for the mechanism (without and with some jingle-jangle fallacies) and the phenomenon of social loafing.\
-The subfolder _/simulation_ contains the R-script with our functions and their plots as well as a simulation. In a separate subfolder are the plots as PNG files.\
-The subfolder _/manuscript_ contains the final report.
+- The subfolder _/doc_ contains our VAST displays (as drawio and PNG files) for the mechanism (without and with some jingle-jangle fallacies) and the phenomenon of social loafing.\
+- The subfolder _/simulation_ contains the R-script with our functions and their plots as well as a simulation. In a separate subfolder are the plots as PNG files.\
+- The subfolder _/manuscript_ contains the final report.
 
 
 ## VAST displays
