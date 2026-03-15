@@ -31,7 +31,7 @@ It should be noted that the identifiability of the individual output (ID) and a 
 
 ## Google Docs
 The link for the Google Docs with my Construct Table, Variable Table, and Relationship Table:\
-https://docs.google.com/document/d/1uZwXfztk2ZApD-X8wkGsBsPKZ0mZOGYQWTcuy2yt2g8/edit?pli=1&tab=t.0
+[Google Docs](https://docs.google.com/document/d/1uZwXfztk2ZApD-X8wkGsBsPKZ0mZOGYQWTcuy2yt2g8/edit?pli=1&tab=t.0)
 
 ## The main paper for this formalization
 Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: The causes and consequences of social loafing. Journal of Personality and Social Psychology, 37(6), 822–832. https://doi.org/10.1037/0022-3514.37.6.822
