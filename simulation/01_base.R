@@ -364,7 +364,7 @@ df_test$ID_SA_label <- ifelse(
   "Identifiability and Standard: Yes",
   "Identifiability and/or Standard: No")
 
-# (example) plot a visual graph for the Superfunction for IO (without random noise) - 2 panels 
+# (example) plot a visual graph for the Superfunction for IO (without random noise) - two panels 
 ggplot(df_test, aes(x = CT, y = IO_without, linetype = factor(df_test$S), color = df_test$ID_SA_label)) +
   geom_point(shape = 8) +
   labs(title = "Individual output", subtitle = "Dependent on Cotargets, Sources, Identifiability, and Standard", y = "Individual output", x = "Number of Cotargets", linetype = "Number of Sources", color = "Identifiability and Standard") +
@@ -385,16 +385,16 @@ ggplot(df_test, aes(x = CT, y = IO_without, linetype = factor(df_test$S), color 
 # We assume that the model is the true data generating model.
 # As it is a deterministic model, any virtual participant
 # will have on average the same individual effort based on 
-# the number of Cotargets (CT) and Sources (S) of Social Pressure.
+# the number of cotargets (CT) and sources (S) of social pressure.
 # The identifiability of the individual output (ID) and a standard for 
-# comparison (SA) are not part of Latané et al. (1979) but an extension
+# comparison (SA) are not part of Latané et al.'s (1979) experiment but an extension
 # based on Latané et al.'s (1979) suggestion and Harkins & Jackson (1985).
 
 
 # Variability comes into the experiment by:
 # (a) Different trait values for the maximum noise each person can produce
-# (b) Randomness from the noise we compute in the superfuncion - due to, e.g., 
-#     faitque, personality, mental state etc. during the experiment
+# (b) Randomness from the noise we compute in the superfunction - due to, e.g., 
+#     fatigue, personality, mental state, etc., during the experiment
 
 # You can run the script repeatedly to simulate new replication studies,
 # and observe the variability in outcomes due to sampling variability.
@@ -481,7 +481,7 @@ data_final <- data.frame(
 #   group_by(ID, SA, CT) %>%
 #   summarise(mean_IO = mean(IO, na.rm = TRUE))
 
-# create extra columns for the plotting - label
+# create extra columns for the plotting of the mean individual outcome - label
 data_final$ID_label <- paste("Identifiability:", data_final$ID)
 data_final$ID_label <- ifelse(
   data_final$ID == 1,
@@ -494,7 +494,7 @@ data_final$SA_label <- ifelse(
   "Standard: Yes",
   "Standard: No")
 
-# plot the visual graph for the mean individual outcome in the different conditions - two graphs
+# plot the visual graph for the mean individual outcome in the different conditions - two panels
 plot_final <- ggplot(data_final, aes(x = groups, y = means)) +
   geom_point(shape = 8) +
   facet_grid(~ID_label + ~SA_label) +
@@ -505,7 +505,7 @@ plot_final <- ggplot(data_final, aes(x = groups, y = means)) +
   geom_line()
 plot_final
 
-# plot the visual graph for the mean individual outcome in the different conditions - one graph
+# plot the visual graph for the mean individual outcome in the different conditions - one panel
 plot_final <- ggplot(data_final, aes(x = groups, y = means, linetype = factor(ID_label), color = factor(SA_label))) +
   geom_point(shape = 8) +
   labs(title = "Mean Individual Output", subtitle = "Dependent on experimental group (S = 2)", y = "Sound Pressure in dyn per cm^2", x = "Conditions (Number of Cotargets)", color = "Standard", linetype = "Identifiability") +
@@ -516,7 +516,7 @@ plot_final <- ggplot(data_final, aes(x = groups, y = means, linetype = factor(ID
 plot_final
 
 
-# create extra columns for the plotting - label
+# create extra columns for the plotting of the boxplots of the simulated raw data - label
 df$ID_label <- paste("Identifiability:", df$ID)
 df$ID_label <- ifelse(
   df$ID == 1,
