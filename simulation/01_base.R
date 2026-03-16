@@ -90,16 +90,16 @@ S <- c(1, 4, 7)
 P <- get_P(CT, S)
 P
 
-# (example) data for CT and S 
+# (example) data - see above
 plot_data
 
-# (example) compute pressure from CT and S
+# (example) compute P from CT and S
 plot_data$P <- get_P(
   CT = plot_data$CT,
   S = plot_data$S
 )
 
-# (example) create an extra column for the plotting
+# (example) create an extra column for the plotting - label
 plot_data$S_label <- paste("Number of Sources:", plot_data$S)
 
 # (example) plot a visual graph for the p2-function
@@ -117,7 +117,7 @@ ggplot(plot_data, aes(x = CT, y = P)) +
 #' INC equals CON. If ID and SA are given, CON and therefore INC are always 1. 
 #' If ID and/or SA are not given, CON and INC can vary between 0 and 1.
 #' 
-#' @param CON number of people who are also viewed as targets of social impact. Ranges from 0 to infinite (discrete)
+#' @param CON contingency between input and outcome. Ranges from 0 to 1 (continuous)
 #' 
 #' @return (INC) incentive to give full effort. Ranges from 0 to 1 (continuous)
 
@@ -130,10 +130,10 @@ get_INC <- function(CON) {
 INC <- get_INC(CON)
 INC
 
-# (example) data for CT and ID
+# (example) data - see above
 plot_data
 
-# (example) compute the incentive from CT (and ID)
+# (example) compute the incentive from CT (and ID + SA)
 plot_data$INC <- get_INC(
   CON = plot_data$CON
 )
@@ -169,10 +169,10 @@ get_IE <- function(INC, P) {
 IE <- get_IE(INC, P)
 IE
 
-# (example) data for INC (dependent on ID) and P
+# (example) data - see above
 plot_data
 
-# (example) compute the individual effort from INC and P
+# (example) compute IE from INC and P
 plot_data$IE <- get_IE(
   INC = plot_data$INC,
   P = plot_data$P
@@ -216,10 +216,10 @@ get_super_IE <- function(CT, S, ID, SA) {
 #' IE is always at least 0.5 because CON and therefore INC are always 1. 
 #' If ID and/or SA are not given, IE can vary between 0 and 1.
 #' 
-#' @param MC maximum capacity to scream. Ranges from 0 to 15 (continuous)
-#' @param IE individual effort Ranges from 0 to 1 (continuous)
+#' @param MC individual maximum capacity (e.g., to scream). Ranges from 0 to inf. (continuous)
+#' @param IE individual effort. Ranges from 0 to 1 (continuous)
 #' 
-#' @return (IO) individual outcome. Ranges from 0 to inf. (continuous)
+#' @return (IO) individual output. Ranges from 0 to inf. (continuous)
 
 get_IO <- function(MC, IE) {
   IO <- MC * IE   
@@ -231,10 +231,10 @@ MC <- c(9, 10, 13)
 IO <- get_IE(MC, IE)
 IO
 
-# (example) data for MC and IE
+# (example) data - see above
 plot_data
 
-# (example) compute the individual effort from MC and IE
+# (example) compute IO from MC and IE
 plot_data$IO <- get_IO(
   MC = plot_data$MC,
   IE = plot_data$IE
@@ -261,9 +261,9 @@ ggplot(plot_data, aes(x = IE, y = IO, linetype = factor(plot_data$MC))) +
 #' @param S number of people viewed as source of social pressure. Ranges from 0 to infinite (discrete)
 #' @param ID identifiability of individual scores/outputs. Binary with 0 (no identifiability) and 1 (identifiability)
 #' @param SA standard available for comparison. Binary with 0 (no standard available) and 1 (standard available)
-#' @param MC maximum capacity to scream. Ranges from 0 to 15 (continuous)
+#' @param MC individual maximum capacity (e.g., to scream). Ranges from 0 to inf. (continuous)
 #' 
-#' @return (IO) individual outcome. Ranges from 0 to inf (continuous)
+#' @return (IO) individual output. Ranges from 0 to inf (continuous)
 
 get_super_IO <- function(CT, S, ID, SA, MC){
   IE <- get_super_IE(CT, S, ID, SA)
@@ -426,6 +426,7 @@ phi <- 5
 alpha <- 0.922*phi
 beta <- (1-0.922)*phi
 
+# set expected value of individual maximum capacity
 scale_factor <- 12.29 / 0.922
 
 # interindividual variability in exogenous variable ("maximum capacity")
@@ -434,6 +435,7 @@ max_per_person <- data.frame(
   maximum = scale_factor * rbeta(n, alpha, beta)
 )
 
+# compute mean of individual maximum capacity
 mean(max_per_person$maximum)
 
 # merge into df
